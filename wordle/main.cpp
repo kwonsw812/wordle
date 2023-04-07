@@ -45,7 +45,7 @@ void dictionary(vector<string> words)
 		cout << "Choose an option (1-2): ";
 
 		cin >> d_sel;
-	} while (d_sel > 2);
+	} while (d_sel > 2 || d_sel < 1);
 
 	if (d_sel == 1) {
 
@@ -76,7 +76,7 @@ void game_menu(vector<string> words)
 		cout << "Choose an option (1-2): ";
 
 		cin >> g_sel;
-	} while (g_sel > 2);
+	} while (g_sel > 2 || g_sel < 1);
 
 	if (g_sel == 1) {
 		game_play(words);
@@ -145,7 +145,7 @@ int main()
 			cout << "Choose an option (1-3): ";
 
 			cin >> sel;
-		} while (sel > 3);
+		} while (sel > 3 || sel < 1);
 
 		if (sel == 1) {
 			cout << endl;
