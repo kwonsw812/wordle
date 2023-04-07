@@ -1,9 +1,9 @@
 #include "std_lib_facilities.h"
 
-void get_words(vector<string>& words);
-void dictionary(vector<string> words);
-void game_menu(vector<string> words);
-void game_play(vector<string> words);
+void get_words(vector<string>&);
+void dictionary(vector<string>);
+void game_menu(vector<string>);
+void game_play(vector<string>);
 
 void menu()
 {
@@ -97,8 +97,6 @@ void game_play(vector<string> words)
 	cout << "\nA new 5-letter word has been chosen randomlyfrom the dictionary." << endl;
 
 	string answer = words[randint(2023)];
-
-	cout << answer;
 
 	for (i = 0; i < 6; i++) {
 		cout << "\n[" << i + 1 << "/6] Guess the word: ";
